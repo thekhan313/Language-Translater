@@ -40,5 +40,9 @@
             app:argType="string"
             android:defaultValue="source" />
     </fragment>
+    <fragment
+        android:id="@+id/ocrFragment"
+        android:name="com.speechlanguageconverter.ui.ocr.OcrFragment"
+        android:label="OCR Checker" />
 
 </navigation>

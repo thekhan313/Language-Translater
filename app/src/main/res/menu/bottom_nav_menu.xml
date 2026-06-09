@@ -8,4 +8,8 @@
         android:id="@+id/translateFragment"
         android:icon="@drawable/ic_translate"
         android:title="Translate" />
+    <item
+        android:id="@+id/ocrFragment"
+        android:icon="@drawable/ic_ocr"
+        android:title="OCR" />
 </menu>
