@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Left checkmark (selected indicator) -->
+    <ImageView
+        android:id="@+id/ivSelected"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_check_selected"
+        android:tint="@color/hint_color"
+        android:visibility="visible"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Selected" />
+
+    <!-- Language name -->
+    <TextView
+        android:id="@+id/tvLanguageName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Download progress spinner (shown while downloading) -->
+    <ProgressBar
+        android:id="@+id/progressDownload"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/green_label" />
+
+    <!-- Right icon: downloaded checkmark or download arrow -->
+    <ImageView
+        android:id="@+id/ivDownloadStatus"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:padding="2dp"
+        android:tint="@color/icon_tint"
+        android:contentDescription="Download status"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+</LinearLayout>

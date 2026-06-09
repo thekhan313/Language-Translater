@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/conversationFragment">
+
+    <fragment
+        android:id="@+id/conversationFragment"
+        android:name="com.speechlanguageconverter.ui.conversation.ConversationFragment"
+        android:label="Conversation">
+        <action
+            android:id="@+id/action_conversation_to_languageSelect"
+            app:destination="@id/languageSelectFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="com.speechlanguageconverter.ui.translate.TranslateFragment"
+        android:label="Translate">
+        <action
+            android:id="@+id/action_translate_to_languageSelect"
+            app:destination="@id/languageSelectFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/languageSelectFragment"
+        android:name="com.speechlanguageconverter.ui.languageselect.LanguageSelectFragment"
+        android:label="Select Language">
+        <!--
+            selectedLanguage: the language currently chosen (to show checkmark)
+            requestKey:       used by setFragmentResult so the caller knows which spinner to update
+                              use "source" or "target"
+        -->
+        <argument
+            android:name="selectedLanguage"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="requestKey"
+            app:argType="string"
+            android:defaultValue="source" />
+    </fragment>
+
+</navigation>

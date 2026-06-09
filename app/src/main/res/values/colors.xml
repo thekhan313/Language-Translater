@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <color name="bg_dark">#1A1A2E</color>
+        <color name="bg_surface">#252542</color>
+        <color name="orange_primary">#FF7043</color>
+        <color name="purple_primary">#7C4DFF</color>
+        <color name="hint_color">#888888</color>
+        <color name="divider">#333355</color>
+        <color name="icon_tint">#AAAACC</color>
+        <color name="teal_label">#00897B</color>
+        <color name="green_label">#2E7D32</color>
+
+
+
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
